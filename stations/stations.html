@@ -1,0 +1,1204 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../styleclear.css">
+    <link rel="stylesheet" href="../header.css">
+    <link rel="stylesheet" href="stations.css">
+    <link rel="icon" type="image/png" href="img/logo-site-blue.png"/>
+    <script src="../slider.js"></script>
+    <script src="stations.js"></script>
+    <title>PM Wiki | Депо</title>
+</head>
+<header>
+    <a href="../title/title.html" class="logo1">
+        <span>
+            P<img src="img/logo-metro-white.png" alt="logo-metro" class="logo-metro"> <img src="img/logo-site-white.png" alt="logo-site" class="logo-site">iki
+        </span>
+    </a>
+    <a href="../title/title.html" class="logo2">
+        <span>
+            P<img src="img/logo-metro-white.png" alt="logo-metro" class="logo-metro"><br><img src="img/logo-site-white.png" alt="logo-site" class="logo-site">iki
+        </span>
+    </a>
+    <div class="navbar">
+        <div class="navbar-button-container">
+            <a href="../global/global.html" class="navbar-button">
+                Общая информация
+            </a>
+        </div>
+        <div class="navbar-button-container">
+            <a href="../development/development.html" class="navbar-button">
+                История
+            </a>
+        </div>
+        <div class="navbar-button-container">
+            <a href="../development/development.html" class="navbar-button">
+                Линии
+            </a>
+            <div class="navbar-dropdown">
+                <div class="dropdown-shift"></div>
+                <a href="../development/development.html" class="navbar-button">
+                    Кировско-выборгская<div class="line1">1</div>
+                </a>
+                <a href="../development/development.html" class="navbar-button">
+                    Московско-Петроградкая<div class="line2">2</div>
+                </a>
+                <a href="../development/development.html" class="navbar-button">
+                    Невско-Василеостровская<div class="line3">3</div>
+                </a>
+                <a href="../development/development.html" class="navbar-button">
+                    Лахтинско-Правобережная<div class="line4">4</div>
+                </a>
+                <a href="../development/development.html" class="navbar-button">
+                    Фрунзнеско-Приморская<div class="line5">5</div>
+                </a>
+            </div>
+        </div>
+        <div class="navbar-button-container">
+            <a href="../stations/stations.html" class="navbar-button">
+                Станции
+            </a>
+        </div>
+        <div class="navbar-button-container">
+            <a href="../trains/trains.html" class="navbar-button">
+                Подвижной состав
+            </a>
+        </div>
+        <div class="navbar-button-container">
+            <a href="../depo/depo.html" class="navbar-button">
+                Депо
+            </a>
+            <div class="navbar-dropdown">
+                <div class="dropdown-shift"></div>
+                <a href="../development/development.html" class="navbar-button">
+                    ТЧ-1 «Автово»
+                </a>
+                <a href="../development/development.html" class="navbar-button">
+                    ТЧ-2 «Дачное»
+                </a>
+                <a href="../development/development.html" class="navbar-button">
+                    ТЧ-3 «Московское»
+                </a>
+                <a href="../development/development.html" class="navbar-button">
+                    ТЧ-4 «Северное»
+                </a>
+                <a href="../development/development.html" class="navbar-button">
+                    ТЧ-5 «Невское»
+                </a>
+                <a href="../development/development.html" class="navbar-button">
+                    ТЧ-6 «Выборгское»
+                </a>
+                <a href="../development/development.html" class="navbar-button">
+                    ТЧ-7 «Южное»
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="burger">
+        <img src="img/burger.png" alt="menu">
+        <div class="burger-dropdown">
+            <div class="dropdown-shift"></div>
+            <a href="../global/global.html" class="navbar-button">
+                Общая информация
+            </a>
+            <a href="../development/development.html" class="navbar-button">
+                История
+            </a>
+            <a href="../development/development.html" class="navbar-button">
+                Линии
+            </a>
+            <a href="../stations/stations.html" class="navbar-button">
+                Станции
+            </a>
+            <a href="../trains/trains.html" class="navbar-button">
+                Подвижной состав
+            </a>
+            <a href="../depo/depo.html" class="navbar-button">
+                Депо
+            </a>
+        </div>
+    </div>
+</header>
+<body onload="SetSlidersNumber(73)">
+    <div class="navbar-shift"> </div>
+    <p class="title">Станции Петербургского Метрополитена</p>
+    <div class="line">
+        <div class="line-title" onclick="OpenCloseLine(1)">
+            <div class="line-logo line1">1</div>
+            Кировско-выборгская линия
+            <div id="arrow1" class="arrow">&lt;</div>
+        </div>
+        <div id="line-container1" class="line-container">
+            <div class="flex-container">
+                <div class="card-container">
+                    <div class="slider-container">
+                        <div class="buttons">
+                            <div class="prev button" onclick="PrevPage(1)">&lt;</div>
+                            <div class="next button" onclick="NextPage(1)">&gt;</div>
+                        </div>
+                        <div id="slider1" class="slider">
+                            <img src="img/avtovo.jpg" alt="Автово">
+                            <img src="img/avtovo1.jpg" alt="Автово">
+                            <img src="img/avtovo2.jpg" alt="Автово">
+                        </div>
+                    </div>
+                    <a href=""><p>Девяткино</p></a>
+                </div>
+                <div class="card-container">
+                    <div class="slider-container">
+                        <div class="buttons">
+                            <div class="prev button" onclick="PrevPage(2)">&lt;</div>
+                            <div class="next button" onclick="NextPage(2)">&gt;</div>
+                        </div>
+                        <div id="slider2" class="slider">
+                            <img src="img/avtovo.jpg" alt="Автово">
+                            <img src="img/avtovo1.jpg" alt="Автово">
+                            <img src="img/avtovo2.jpg" alt="Автово">
+                        </div>
+                    </div>
+                    <a href=""><p>Гражданский проспект</p></a>
+                </div>
+                <div class="card-container">
+                    <div class="slider-container">
+                        <div class="buttons">
+                            <div class="prev button" onclick="PrevPage(3)">&lt;</div>
+                            <div class="next button" onclick="NextPage(3)">&gt;</div>
+                        </div>
+                        <div id="slider3" class="slider">
+                            <img src="img/avtovo.jpg" alt="Автово">
+                            <img src="img/avtovo1.jpg" alt="Автово">
+                            <img src="img/avtovo2.jpg" alt="Автово">
+                        </div>
+                    </div>
+                    <a href=""><p>Академическая</p></a>
+                </div>
+                <div class="card-container">
+                    <div class="slider-container">
+                        <div class="buttons">
+                            <div class="prev button" onclick="PrevPage(4)">&lt;</div>
+                            <div class="next button" onclick="NextPage(4)">&gt;</div>
+                        </div>
+                        <div id="slider4" class="slider">
+                            <img src="img/avtovo.jpg" alt="Автово">
+                            <img src="img/avtovo1.jpg" alt="Автово">
+                            <img src="img/avtovo2.jpg" alt="Автово">
+                        </div>
+                    </div>
+                    <a href=""><p>Политехническая</p></a>
+                </div>
+                <div class="card-container">
+                    <div class="slider-container">
+                        <div class="buttons">
+                            <div class="prev button" onclick="PrevPage(5)">&lt;</div>
+                            <div class="next button" onclick="NextPage(5)">&gt;</div>
+                        </div>
+                        <div id="slider5" class="slider">
+                            <img src="img/avtovo.jpg" alt="Автово">
+                            <img src="img/avtovo1.jpg" alt="Автово">
+                            <img src="img/avtovo2.jpg" alt="Автово">
+                        </div>
+                    </div>
+                    <a href=""><p>Площадь Мужества</p></a>
+                </div>
+                <div class="card-container">
+                    <div class="slider-container">
+                        <div class="buttons">
+                            <div class="prev button" onclick="PrevPage(6)">&lt;</div>
+                            <div class="next button" onclick="NextPage(6)">&gt;</div>
+                        </div>
+                        <div id="slider6" class="slider">
+                            <img src="img/avtovo.jpg" alt="Автово">
+                            <img src="img/avtovo1.jpg" alt="Автово">
+                            <img src="img/avtovo2.jpg" alt="Автово">
+                        </div>
+                    </div>
+                    <a href=""><p>Лесная</p></a>
+                </div>
+                <div class="card-container">
+                    <div class="slider-container">
+                        <div class="buttons">
+                            <div class="prev button" onclick="PrevPage(7)">&lt;</div>
+                            <div class="next button" onclick="NextPage(7)">&gt;</div>
+                        </div>
+                        <div id="slider7" class="slider">
+                            <img src="img/avtovo.jpg" alt="Автово">
+                            <img src="img/avtovo1.jpg" alt="Автово">
+                            <img src="img/avtovo2.jpg" alt="Автово">
+                        </div>
+                    </div>
+                    <a href=""><p>Выборгская</p></a>
+                </div>
+                <div class="card-container">
+                    <div class="slider-container">
+                        <div class="buttons">
+                            <div class="prev button" onclick="PrevPage(8)">&lt;</div>
+                            <div class="next button" onclick="NextPage(8)">&gt;</div>
+                        </div>
+                        <div id="slider8" class="slider">
+                            <img src="img/avtovo.jpg" alt="Автово">
+                            <img src="img/avtovo1.jpg" alt="Автово">
+                            <img src="img/avtovo2.jpg" alt="Автово">
+                        </div>
+                    </div>
+                    <a href=""><p>Площадь Ленина</p></a>
+                </div>
+                <div class="card-container">
+                    <div class="slider-container">
+                        <div class="buttons">
+                            <div class="prev button" onclick="PrevPage(9)">&lt;</div>
+                            <div class="next button" onclick="NextPage(9)">&gt;</div>
+                        </div>
+                        <div id="slider9" class="slider">
+                            <img src="img/avtovo.jpg" alt="Автово">
+                            <img src="img/avtovo1.jpg" alt="Автово">
+                            <img src="img/avtovo2.jpg" alt="Автово">
+                        </div>
+                    </div>
+                    <a href=""><p>Чернышевская</p></a>
+                </div>
+                <div class="card-container">
+                    <div class="slider-container">
+                        <div class="buttons">
+                            <div class="prev button" onclick="PrevPage(10)">&lt;</div>
+                            <div class="next button" onclick="NextPage(10)">&gt;</div>
+                        </div>
+                        <div id="slider10" class="slider">
+                            <img src="img/avtovo.jpg" alt="Автово">
+                            <img src="img/avtovo1.jpg" alt="Автово">
+                            <img src="img/avtovo2.jpg" alt="Автово">
+                        </div>
+                    </div>
+                    <a href=""><p>Площадь Восстания</p></a>
+                </div>
+                <div class="card-container">
+                    <div class="slider-container">
+                        <div class="buttons">
+                            <div class="prev button" onclick="PrevPage(11)">&lt;</div>
+                            <div class="next button" onclick="NextPage(11)">&gt;</div>
+                        </div>
+                        <div id="slider11" class="slider">
+                            <img src="img/avtovo.jpg" alt="Автово">
+                            <img src="img/avtovo1.jpg" alt="Автово">
+                            <img src="img/avtovo2.jpg" alt="Автово">
+                        </div>
+                    </div>
+                    <a href=""><p>Владимирская</p></a>
+                </div>
+                <div class="card-container">
+                    <div class="slider-container">
+                        <div class="buttons">
+                            <div class="prev button" onclick="PrevPage(12)">&lt;</div>
+                            <div class="next button" onclick="NextPage(12)">&gt;</div>
+                        </div>
+                        <div id="slider12" class="slider">
+                            <img src="img/avtovo.jpg" alt="Автово">
+                            <img src="img/avtovo1.jpg" alt="Автово">
+                            <img src="img/avtovo2.jpg" alt="Автово">
+                        </div>
+                    </div>
+                    <a href=""><p>Пушкинская</p></a>
+                </div>
+                <div class="card-container">
+                    <div class="slider-container">
+                        <div class="buttons">
+                            <div class="prev button" onclick="PrevPage(13)">&lt;</div>
+                            <div class="next button" onclick="NextPage(13)">&gt;</div>
+                        </div>
+                        <div id="slider13" class="slider">
+                            <img src="img/avtovo.jpg" alt="Автово">
+                            <img src="img/avtovo1.jpg" alt="Автово">
+                            <img src="img/avtovo2.jpg" alt="Автово">
+                        </div>
+                    </div>
+                    <a href=""><p>Технологический институт</p></a>
+                </div>
+                <div class="card-container">
+                    <div class="slider-container">
+                        <div class="buttons">
+                            <div class="prev button" onclick="PrevPage(14)">&lt;</div>
+                            <div class="next button" onclick="NextPage(14)">&gt;</div>
+                        </div>
+                        <div id="slider14" class="slider">
+                            <img src="img/avtovo.jpg" alt="Автово">
+                            <img src="img/avtovo1.jpg" alt="Автово">
+                            <img src="img/avtovo2.jpg" alt="Автово">
+                        </div>
+                    </div>
+                    <a href=""><p>Пушкинская</p></a>
+                </div>
+                <div class="card-container">
+                    <div class="slider-container">
+                        <div class="buttons">
+                            <div class="prev button" onclick="PrevPage(15)">&lt;</div>
+                            <div class="next button" onclick="NextPage(15)">&gt;</div>
+                        </div>
+                        <div id="slider15" class="slider">
+                            <img src="img/avtovo.jpg" alt="Автово">
+                            <img src="img/avtovo1.jpg" alt="Автово">
+                            <img src="img/avtovo2.jpg" alt="Автово">
+                        </div>
+                    </div>
+                    <a href=""><p>Балтийская</p></a>
+                </div>
+                <div class="card-container">
+                    <div class="slider-container">
+                        <div class="buttons">
+                            <div class="prev button" onclick="PrevPage(16)">&lt;</div>
+                            <div class="next button" onclick="NextPage(16)">&gt;</div>
+                        </div>
+                        <div id="slider16" class="slider">
+                            <img src="img/avtovo.jpg" alt="Автово">
+                            <img src="img/avtovo1.jpg" alt="Автово">
+                            <img src="img/avtovo2.jpg" alt="Автово">
+                        </div>
+                    </div>
+                    <a href=""><p>Нарвская</p></a>
+                </div>
+                <div class="card-container">
+                    <div class="slider-container">
+                        <div class="buttons">
+                            <div class="prev button" onclick="PrevPage(17)">&lt;</div>
+                            <div class="next button" onclick="NextPage(17)">&gt;</div>
+                        </div>
+                        <div id="slider17" class="slider">
+                            <img src="img/avtovo.jpg" alt="Автово">
+                            <img src="img/avtovo1.jpg" alt="Автово">
+                            <img src="img/avtovo2.jpg" alt="Автово">
+                        </div>
+                    </div>
+                    <a href=""><p>Кировский завод</p></a>
+                </div>
+                <div class="card-container">
+                    <div class="slider-container">
+                        <div class="buttons">
+                            <div class="prev button" onclick="PrevPage(18)">&lt;</div>
+                            <div class="next button" onclick="NextPage(18)">&gt;</div>
+                        </div>
+                        <div id="slider18" class="slider">
+                            <img src="img/avtovo.jpg" alt="Автово">
+                            <img src="img/avtovo1.jpg" alt="Автово">
+                            <img src="img/avtovo2.jpg" alt="Автово">
+                        </div>
+                    </div>
+                    <a href=""><p>Автово</p></a>
+                </div>
+                <div class="card-container">
+                    <div class="slider-container">
+                        <div class="buttons">
+                            <div class="prev button" onclick="PrevPage(19)">&lt;</div>
+                            <div class="next button" onclick="NextPage(19)">&gt;</div>
+                        </div>
+                        <div id="slider19" class="slider">
+                            <img src="img/avtovo.jpg" alt="Автово">
+                            <img src="img/avtovo1.jpg" alt="Автово">
+                            <img src="img/avtovo2.jpg" alt="Автово">
+                        </div>
+                    </div>
+                    <a href=""><p>Ленинский проспект</p></a>
+                </div>
+                <div class="card-container">
+                    <div class="slider-container">
+                        <div class="buttons">
+                            <div class="prev button" onclick="PrevPage(20)">&lt;</div>
+                            <div class="next button" onclick="NextPage(20)">&gt;</div>
+                        </div>
+                        <div id="slider20" class="slider">
+                            <img src="img/avtovo.jpg" alt="Автово">
+                            <img src="img/avtovo1.jpg" alt="Автово">
+                            <img src="img/avtovo2.jpg" alt="Автово">
+                        </div>
+                    </div>
+                    <a href=""><p>Проспект Ветеранов</p></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="line">
+        <div class="line-title" onclick="OpenCloseLine(2)">
+            <div class="line-logo line2">2</div>
+            Московско-Петроградкая линия
+            <div id="arrow2" class="arrow">&lt;</div>
+        </div>
+        <div id="line-container2" class="line-container">
+            <div class="flex-container">
+                <div class="card-container">
+                    <div class="slider-container">
+                        <div class="buttons">
+                            <div class="prev button" onclick="PrevPage(21)">&lt;</div>
+                            <div class="next button" onclick="NextPage(21)">&gt;</div>
+                        </div>
+                        <div id="slider21" class="slider">
+                            <img src="img/avtovo.jpg" alt="Автово">
+                            <img src="img/avtovo1.jpg" alt="Автово">
+                            <img src="img/avtovo2.jpg" alt="Автово">
+                        </div>
+                    </div>
+                    <a href=""><p>Парнас</p></a>
+                </div>
+                <div class="card-container">
+                    <div class="slider-container">
+                        <div class="buttons">
+                            <div class="prev button" onclick="PrevPage(22)">&lt;</div>
+                            <div class="next button" onclick="NextPage(22)">&gt;</div>
+                        </div>
+                        <div id="slider22" class="slider">
+                            <img src="img/avtovo.jpg" alt="Автово">
+                            <img src="img/avtovo1.jpg" alt="Автово">
+                            <img src="img/avtovo2.jpg" alt="Автово">
+                        </div>
+                    </div>
+                    <a href=""><p>Проспект Просвещения</p></a>
+                </div>
+                <div class="card-container">
+                    <div class="slider-container">
+                        <div class="buttons">
+                            <div class="prev button" onclick="PrevPage(23)">&lt;</div>
+                            <div class="next button" onclick="NextPage(23)">&gt;</div>
+                        </div>
+                        <div id="slider23" class="slider">
+                            <img src="img/avtovo.jpg" alt="Автово">
+                            <img src="img/avtovo1.jpg" alt="Автово">
+                            <img src="img/avtovo2.jpg" alt="Автово">
+                        </div>
+                    </div>
+                    <a href=""><p>Озерки</p></a>
+                </div>
+                <div class="card-container">
+                    <div class="slider-container">
+                        <div class="buttons">
+                            <div class="prev button" onclick="PrevPage(24)">&lt;</div>
+                            <div class="next button" onclick="NextPage(24)">&gt;</div>
+                        </div>
+                        <div id="slider24" class="slider">
+                            <img src="img/avtovo.jpg" alt="Автово">
+                            <img src="img/avtovo1.jpg" alt="Автово">
+                            <img src="img/avtovo2.jpg" alt="Автово">
+                        </div>
+                    </div>
+                    <a href=""><p>Удельная</p></a>
+                </div>
+                <div class="card-container">
+                    <div class="slider-container">
+                        <div class="buttons">
+                            <div class="prev button" onclick="PrevPage(25)">&lt;</div>
+                            <div class="next button" onclick="NextPage(25)">&gt;</div>
+                        </div>
+                        <div id="slider25" class="slider">
+                            <img src="img/avtovo.jpg" alt="Автово">
+                            <img src="img/avtovo1.jpg" alt="Автово">
+                            <img src="img/avtovo2.jpg" alt="Автово">
+                        </div>
+                    </div>
+                    <a href=""><p>Пионерская</p></a>
+                </div>
+                <div class="card-container">
+                    <div class="slider-container">
+                        <div class="buttons">
+                            <div class="prev button" onclick="PrevPage(26)">&lt;</div>
+                            <div class="next button" onclick="NextPage(26)">&gt;</div>
+                        </div>
+                        <div id="slider26" class="slider">
+                            <img src="img/avtovo.jpg" alt="Автово">
+                            <img src="img/avtovo1.jpg" alt="Автово">
+                            <img src="img/avtovo2.jpg" alt="Автово">
+                        </div>
+                    </div>
+                    <a href=""><p>Чёрная речка</p></a>
+                </div>
+                <div class="card-container">
+                    <div class="slider-container">
+                        <div class="buttons">
+                            <div class="prev button" onclick="PrevPage(27)">&lt;</div>
+                            <div class="next button" onclick="NextPage(27)">&gt;</div>
+                        </div>
+                        <div id="slider27" class="slider">
+                            <img src="img/avtovo.jpg" alt="Автово">
+                            <img src="img/avtovo1.jpg" alt="Автово">
+                            <img src="img/avtovo2.jpg" alt="Автово">
+                        </div>
+                    </div>
+                    <a href=""><p>Петроградская</p></a>
+                </div>
+                <div class="card-container">
+                    <div class="slider-container">
+                        <div class="buttons">
+                            <div class="prev button" onclick="PrevPage(28)">&lt;</div>
+                            <div class="next button" onclick="NextPage(28)">&gt;</div>
+                        </div>
+                        <div id="slider28" class="slider">
+                            <img src="img/avtovo.jpg" alt="Автово">
+                            <img src="img/avtovo1.jpg" alt="Автово">
+                            <img src="img/avtovo2.jpg" alt="Автово">
+                        </div>
+                    </div>
+                    <a href=""><p>Горьковская</p></a>
+                </div>
+                <div class="card-container">
+                    <div class="slider-container">
+                        <div class="buttons">
+                            <div class="prev button" onclick="PrevPage(29)">&lt;</div>
+                            <div class="next button" onclick="NextPage(29)">&gt;</div>
+                        </div>
+                        <div id="slider9" class="slider">
+                            <img src="img/avtovo.jpg" alt="Автово">
+                            <img src="img/avtovo1.jpg" alt="Автово">
+                            <img src="img/avtovo2.jpg" alt="Автово">
+                        </div>
+                    </div>
+                    <a href=""><p>Невский проспект</p></a>
+                </div>
+                <div class="card-container">
+                    <div class="slider-container">
+                        <div class="buttons">
+                            <div class="prev button" onclick="PrevPage(30)">&lt;</div>
+                            <div class="next button" onclick="NextPage(30)">&gt;</div>
+                        </div>
+                        <div id="slider30" class="slider">
+                            <img src="img/avtovo.jpg" alt="Автово">
+                            <img src="img/avtovo1.jpg" alt="Автово">
+                            <img src="img/avtovo2.jpg" alt="Автово">
+                        </div>
+                    </div>
+                    <a href=""><p>Сенная площадь</p></a>
+                </div>
+                <div class="card-container">
+                    <div class="slider-container">
+                        <div class="buttons">
+                            <div class="prev button" onclick="PrevPage(31)">&lt;</div>
+                            <div class="next button" onclick="NextPage(31)">&gt;</div>
+                        </div>
+                        <div id="slider31" class="slider">
+                            <img src="img/avtovo.jpg" alt="Автово">
+                            <img src="img/avtovo1.jpg" alt="Автово">
+                            <img src="img/avtovo2.jpg" alt="Автово">
+                        </div>
+                    </div>
+                    <a href=""><p>Технологический институт</p></a>
+                </div>
+                <div class="card-container">
+                    <div class="slider-container">
+                        <div class="buttons">
+                            <div class="prev button" onclick="PrevPage(32)">&lt;</div>
+                            <div class="next button" onclick="NextPage(32)">&gt;</div>
+                        </div>
+                        <div id="slider32" class="slider">
+                            <img src="img/avtovo.jpg" alt="Автово">
+                            <img src="img/avtovo1.jpg" alt="Автово">
+                            <img src="img/avtovo2.jpg" alt="Автово">
+                        </div>
+                    </div>
+                    <a href=""><p>Фрунзенская</p></a>
+                </div>
+                <div class="card-container">
+                    <div class="slider-container">
+                        <div class="buttons">
+                            <div class="prev button" onclick="PrevPage(33)">&lt;</div>
+                            <div class="next button" onclick="NextPage(33)">&gt;</div>
+                        </div>
+                        <div id="slider33" class="slider">
+                            <img src="img/avtovo.jpg" alt="Автово">
+                            <img src="img/avtovo1.jpg" alt="Автово">
+                            <img src="img/avtovo2.jpg" alt="Автово">
+                        </div>
+                    </div>
+                    <a href=""><p>Московские ворота</p></a>
+                </div>
+                <div class="card-container">
+                    <div class="slider-container">
+                        <div class="buttons">
+                            <div class="prev button" onclick="PrevPage(34)">&lt;</div>
+                            <div class="next button" onclick="NextPage(34)">&gt;</div>
+                        </div>
+                        <div id="slider34" class="slider">
+                            <img src="img/avtovo.jpg" alt="Автово">
+                            <img src="img/avtovo1.jpg" alt="Автово">
+                            <img src="img/avtovo2.jpg" alt="Автово">
+                        </div>
+                    </div>
+                    <a href=""><p>Электросила</p></a>
+                </div>
+                <div class="card-container">
+                    <div class="slider-container">
+                        <div class="buttons">
+                            <div class="prev button" onclick="PrevPage(35)">&lt;</div>
+                            <div class="next button" onclick="NextPage(35)">&gt;</div>
+                        </div>
+                        <div id="slider35" class="slider">
+                            <img src="img/avtovo.jpg" alt="Автово">
+                            <img src="img/avtovo1.jpg" alt="Автово">
+                            <img src="img/avtovo2.jpg" alt="Автово">
+                        </div>
+                    </div>
+                    <a href=""><p>Парк Победы</p></a>
+                </div>
+                <div class="card-container">
+                    <div class="slider-container">
+                        <div class="buttons">
+                            <div class="prev button" onclick="PrevPage(36)">&lt;</div>
+                            <div class="next button" onclick="NextPage(36)">&gt;</div>
+                        </div>
+                        <div id="slider36" class="slider">
+                            <img src="img/avtovo.jpg" alt="Автово">
+                            <img src="img/avtovo1.jpg" alt="Автово">
+                            <img src="img/avtovo2.jpg" alt="Автово">
+                        </div>
+                    </div>
+                    <a href=""><p>Московская</p></a>
+                </div>
+                <div class="card-container">
+                    <div class="slider-container">
+                        <div class="buttons">
+                            <div class="prev button" onclick="PrevPage(37)">&lt;</div>
+                            <div class="next button" onclick="NextPage(37)">&gt;</div>
+                        </div>
+                        <div id="slider37" class="slider">
+                            <img src="img/avtovo.jpg" alt="Автово">
+                            <img src="img/avtovo1.jpg" alt="Автово">
+                            <img src="img/avtovo2.jpg" alt="Автово">
+                        </div>
+                    </div>
+                    <a href=""><p>Звёздная</p></a>
+                </div>
+                <div class="card-container">
+                    <div class="slider-container">
+                        <div class="buttons">
+                            <div class="prev button" onclick="PrevPage(38)">&lt;</div>
+                            <div class="next button" onclick="NextPage(38)">&gt;</div>
+                        </div>
+                        <div id="slider38" class="slider">
+                            <img src="img/avtovo.jpg" alt="Автово">
+                            <img src="img/avtovo1.jpg" alt="Автово">
+                            <img src="img/avtovo2.jpg" alt="Автово">
+                        </div>
+                    </div>
+                    <a href=""><p>Купчино</p></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="line">
+        <div class="line-title" onclick="OpenCloseLine(3)">
+            <div class="line-logo line3">3</div>
+            Невско-Василеостровская линия
+            <div id="arrow3" class="arrow">&lt;</div>
+        </div>
+        <div id="line-container3" class="line-container">
+            <div class="flex-container">
+                <div class="card-container">
+                    <div class="slider-container">
+                        <div class="buttons">
+                            <div class="prev button" onclick="PrevPage(39)">&lt;</div>
+                            <div class="next button" onclick="NextPage(39)">&gt;</div>
+                        </div>
+                        <div id="slider39" class="slider">
+                            <img src="img/avtovo.jpg" alt="Автово">
+                            <img src="img/avtovo1.jpg" alt="Автово">
+                            <img src="img/avtovo2.jpg" alt="Автово">
+                        </div>
+                    </div>
+                    <a href=""><p>Беговая</p></a>
+                </div>
+                <div class="card-container">
+                    <div class="slider-container">
+                        <div class="buttons">
+                            <div class="prev button" onclick="PrevPage(40)">&lt;</div>
+                            <div class="next button" onclick="NextPage(40)">&gt;</div>
+                        </div>
+                        <div id="slider40" class="slider">
+                            <img src="img/avtovo.jpg" alt="Автово">
+                            <img src="img/avtovo1.jpg" alt="Автово">
+                            <img src="img/avtovo2.jpg" alt="Автово">
+                        </div>
+                    </div>
+                    <a href=""><p>Зенит</p></a>
+                </div>
+                <div class="card-container">
+                    <div class="slider-container">
+                        <div class="buttons">
+                            <div class="prev button" onclick="PrevPage(41)">&lt;</div>
+                            <div class="next button" onclick="NextPage(41)">&gt;</div>
+                        </div>
+                        <div id="slider41" class="slider">
+                            <img src="img/avtovo.jpg" alt="Автово">
+                            <img src="img/avtovo1.jpg" alt="Автово">
+                            <img src="img/avtovo2.jpg" alt="Автово">
+                        </div>
+                    </div>
+                    <a href=""><p>Приморская</p></a>
+                </div>
+                <div class="card-container">
+                    <div class="slider-container">
+                        <div class="buttons">
+                            <div class="prev button" onclick="PrevPage(42)">&lt;</div>
+                            <div class="next button" onclick="NextPage(42)">&gt;</div>
+                        </div>
+                        <div id="slider42" class="slider">
+                            <img src="img/avtovo.jpg" alt="Автово">
+                            <img src="img/avtovo1.jpg" alt="Автово">
+                            <img src="img/avtovo2.jpg" alt="Автово">
+                        </div>
+                    </div>
+                    <a href=""><p>Василеостровская</p></a>
+                </div>
+                <div class="card-container">
+                    <div class="slider-container">
+                        <div class="buttons">
+                            <div class="prev button" onclick="PrevPage(43)">&lt;</div>
+                            <div class="next button" onclick="NextPage(43)">&gt;</div>
+                        </div>
+                        <div id="slider43" class="slider">
+                            <img src="img/avtovo.jpg" alt="Автово">
+                            <img src="img/avtovo1.jpg" alt="Автово">
+                            <img src="img/avtovo2.jpg" alt="Автово">
+                        </div>
+                    </div>
+                    <a href=""><p>Гостиный двор</p></a>
+                </div>
+                <div class="card-container">
+                    <div class="slider-container">
+                        <div class="buttons">
+                            <div class="prev button" onclick="PrevPage(44)">&lt;</div>
+                            <div class="next button" onclick="NextPage(44)">&gt;</div>
+                        </div>
+                        <div id="slider44" class="slider">
+                            <img src="img/avtovo.jpg" alt="Автово">
+                            <img src="img/avtovo1.jpg" alt="Автово">
+                            <img src="img/avtovo2.jpg" alt="Автово">
+                        </div>
+                    </div>
+                    <a href=""><p>Маяковская</p></a>
+                </div>
+                <div class="card-container">
+                    <div class="slider-container">
+                        <div class="buttons">
+                            <div class="prev button" onclick="PrevPage(45)">&lt;</div>
+                            <div class="next button" onclick="NextPage(45)">&gt;</div>
+                        </div>
+                        <div id="slider45" class="slider">
+                            <img src="img/avtovo.jpg" alt="Автово">
+                            <img src="img/avtovo1.jpg" alt="Автово">
+                            <img src="img/avtovo2.jpg" alt="Автово">
+                        </div>
+                    </div>
+                    <a href=""><p>Площадь Александра Невского 1</p></a>
+                </div>
+                <div class="card-container">
+                    <div class="slider-container">
+                        <div class="buttons">
+                            <div class="prev button" onclick="PrevPage(46)">&lt;</div>
+                            <div class="next button" onclick="NextPage(46)">&gt;</div>
+                        </div>
+                        <div id="slider46" class="slider">
+                            <img src="img/avtovo.jpg" alt="Автово">
+                            <img src="img/avtovo1.jpg" alt="Автово">
+                            <img src="img/avtovo2.jpg" alt="Автово">
+                        </div>
+                    </div>
+                    <a href=""><p>Елизаровская</p></a>
+                </div>
+                <div class="card-container">
+                    <div class="slider-container">
+                        <div class="buttons">
+                            <div class="prev button" onclick="PrevPage(47)">&lt;</div>
+                            <div class="next button" onclick="NextPage(47)">&gt;</div>
+                        </div>
+                        <div id="slider47" class="slider">
+                            <img src="img/avtovo.jpg" alt="Автово">
+                            <img src="img/avtovo1.jpg" alt="Автово">
+                            <img src="img/avtovo2.jpg" alt="Автово">
+                        </div>
+                    </div>
+                    <a href=""><p>Ломоносовская</p></a>
+                </div>
+                <div class="card-container">
+                    <div class="slider-container">
+                        <div class="buttons">
+                            <div class="prev button" onclick="PrevPage(48)">&lt;</div>
+                            <div class="next button" onclick="NextPage(48)">&gt;</div>
+                        </div>
+                        <div id="slider48" class="slider">
+                            <img src="img/avtovo.jpg" alt="Автово">
+                            <img src="img/avtovo1.jpg" alt="Автово">
+                            <img src="img/avtovo2.jpg" alt="Автово">
+                        </div>
+                    </div>
+                    <a href=""><p>Пролетарская</p></a>
+                </div>
+                <div class="card-container">
+                    <div class="slider-container">
+                        <div class="buttons">
+                            <div class="prev button" onclick="PrevPage(49)">&lt;</div>
+                            <div class="next button" onclick="NextPage(49)">&gt;</div>
+                        </div>
+                        <div id="slider49" class="slider">
+                            <img src="img/avtovo.jpg" alt="Автово">
+                            <img src="img/avtovo1.jpg" alt="Автово">
+                            <img src="img/avtovo2.jpg" alt="Автово">
+                        </div>
+                    </div>
+                    <a href=""><p>Обухово</p></a>
+                </div>
+                <div class="card-container">
+                    <div class="slider-container">
+                        <div class="buttons">
+                            <div class="prev button" onclick="PrevPage(50)">&lt;</div>
+                            <div class="next button" onclick="NextPage(50)">&gt;</div>
+                        </div>
+                        <div id="slider50" class="slider">
+                            <img src="img/avtovo.jpg" alt="Автово">
+                            <img src="img/avtovo1.jpg" alt="Автово">
+                            <img src="img/avtovo2.jpg" alt="Автово">
+                        </div>
+                    </div>
+                    <a href=""><p>Рыбацкое</p></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="line">
+        <div class="line-title" onclick="OpenCloseLine(4)">
+            <div class="line-logo line4">4</div>
+            Лахтинско-Правобережная линия
+            <div id="arrow4" class="arrow">&lt;</div>
+        </div>
+        <div id="line-container4" class="line-container">
+            <div class="flex-container">
+                <div class="card-container">
+                    <div class="slider-container">
+                        <div class="buttons">
+                            <div class="prev button" onclick="PrevPage(51)">&lt;</div>
+                            <div class="next button" onclick="NextPage(51)">&gt;</div>
+                        </div>
+                        <div id="slider51" class="slider">
+                            <img src="img/avtovo.jpg" alt="Автово">
+                            <img src="img/avtovo1.jpg" alt="Автово">
+                            <img src="img/avtovo2.jpg" alt="Автово">
+                        </div>
+                    </div>
+                    <a href=""><p>Спасская</p></a>
+                </div>
+                <div class="card-container">
+                    <div class="slider-container">
+                        <div class="buttons">
+                            <div class="prev button" onclick="PrevPage(52)">&lt;</div>
+                            <div class="next button" onclick="NextPage(52)">&gt;</div>
+                        </div>
+                        <div id="slider52" class="slider">
+                            <img src="img/avtovo.jpg" alt="Автово">
+                            <img src="img/avtovo1.jpg" alt="Автово">
+                            <img src="img/avtovo2.jpg" alt="Автово">
+                        </div>
+                    </div>
+                    <a href=""><p>Достоевская</p></a>
+                </div>
+                <div class="card-container">
+                    <div class="slider-container">
+                        <div class="buttons">
+                            <div class="prev button" onclick="PrevPage(53)">&lt;</div>
+                            <div class="next button" onclick="NextPage(53)">&gt;</div>
+                        </div>
+                        <div id="slider53" class="slider">
+                            <img src="img/avtovo.jpg" alt="Автово">
+                            <img src="img/avtovo1.jpg" alt="Автово">
+                            <img src="img/avtovo2.jpg" alt="Автово">
+                        </div>
+                    </div>
+                    <a href=""><p>Лиговский проспект</p></a>
+                </div>
+                <div class="card-container">
+                    <div class="slider-container">
+                        <div class="buttons">
+                            <div class="prev button" onclick="PrevPage(54)">&lt;</div>
+                            <div class="next button" onclick="NextPage(54)">&gt;</div>
+                        </div>
+                        <div id="slider54" class="slider">
+                            <img src="img/avtovo.jpg" alt="Автово">
+                            <img src="img/avtovo1.jpg" alt="Автово">
+                            <img src="img/avtovo2.jpg" alt="Автово">
+                        </div>
+                    </div>
+                    <a href=""><p>Площадь Александра Невского 2</p></a>
+                </div>
+                <div class="card-container">
+                    <div class="slider-container">
+                        <div class="buttons">
+                            <div class="prev button" onclick="PrevPage(55)">&lt;</div>
+                            <div class="next button" onclick="NextPage(55)">&gt;</div>
+                        </div>
+                        <div id="slider55" class="slider">
+                            <img src="img/avtovo.jpg" alt="Автово">
+                            <img src="img/avtovo1.jpg" alt="Автово">
+                            <img src="img/avtovo2.jpg" alt="Автово">
+                        </div>
+                    </div>
+                    <a href=""><p>Новочеркасская</p></a>
+                </div>
+                <div class="card-container">
+                    <div class="slider-container">
+                        <div class="buttons">
+                            <div class="prev button" onclick="PrevPage(56)">&lt;</div>
+                            <div class="next button" onclick="NextPage(56)">&gt;</div>
+                        </div>
+                        <div id="slider56" class="slider">
+                            <img src="img/avtovo.jpg" alt="Автово">
+                            <img src="img/avtovo1.jpg" alt="Автово">
+                            <img src="img/avtovo2.jpg" alt="Автово">
+                        </div>
+                    </div>
+                    <a href=""><p>Ладожская</p></a>
+                </div>
+                <div class="card-container">
+                    <div class="slider-container">
+                        <div class="buttons">
+                            <div class="prev button" onclick="PrevPage(57)">&lt;</div>
+                            <div class="next button" onclick="NextPage(57)">&gt;</div>
+                        </div>
+                        <div id="slider57" class="slider">
+                            <img src="img/avtovo.jpg" alt="Автово">
+                            <img src="img/avtovo1.jpg" alt="Автово">
+                            <img src="img/avtovo2.jpg" alt="Автово">
+                        </div>
+                    </div>
+                    <a href=""><p>Проспект Большевиков</p></a>
+                </div>
+                <div class="card-container">
+                    <div class="slider-container">
+                        <div class="buttons">
+                            <div class="prev button" onclick="PrevPage(58)">&lt;</div>
+                            <div class="next button" onclick="NextPage(58)">&gt;</div>
+                        </div>
+                        <div id="slider58" class="slider">
+                            <img src="img/avtovo.jpg" alt="Автово">
+                            <img src="img/avtovo1.jpg" alt="Автово">
+                            <img src="img/avtovo2.jpg" alt="Автово">
+                        </div>
+                    </div>
+                    <a href=""><p>Улица Дыбенко</p></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="line">
+        <div class="line-title" onclick="OpenCloseLine(5)">
+            <div class="line-logo line5">5</div>
+            Фрунзнеско-Приморская линия
+            <div id="arrow5" class="arrow">&lt;</div>
+        </div>
+        <div id="line-container5" class="line-container">
+            <div class="flex-container">
+                <div class="card-container">
+                    <div class="slider-container">
+                        <div class="buttons">
+                            <div class="prev button" onclick="PrevPage(59)">&lt;</div>
+                            <div class="next button" onclick="NextPage(59)">&gt;</div>
+                        </div>
+                        <div id="slider59" class="slider">
+                            <img src="img/avtovo.jpg" alt="Автово">
+                            <img src="img/avtovo1.jpg" alt="Автово">
+                            <img src="img/avtovo2.jpg" alt="Автово">
+                        </div>
+                    </div>
+                    <a href=""><p>Коменданский проспект</p></a>
+                </div>
+                <div class="card-container">
+                    <div class="slider-container">
+                        <div class="buttons">
+                            <div class="prev button" onclick="PrevPage(60)">&lt;</div>
+                            <div class="next button" onclick="NextPage(60)">&gt;</div>
+                        </div>
+                        <div id="slider60" class="slider">
+                            <img src="img/avtovo.jpg" alt="Автово">
+                            <img src="img/avtovo1.jpg" alt="Автово">
+                            <img src="img/avtovo2.jpg" alt="Автово">
+                        </div>
+                    </div>
+                    <a href=""><p>Старая деревня</p></a>
+                </div>
+                <div class="card-container">
+                    <div class="slider-container">
+                        <div class="buttons">
+                            <div class="prev button" onclick="PrevPage(61)">&lt;</div>
+                            <div class="next button" onclick="NextPage(61)">&gt;</div>
+                        </div>
+                        <div id="slider61" class="slider">
+                            <img src="img/avtovo.jpg" alt="Автово">
+                            <img src="img/avtovo1.jpg" alt="Автово">
+                            <img src="img/avtovo2.jpg" alt="Автово">
+                        </div>
+                    </div>
+                    <a href=""><p>Крестовский остров</p></a>
+                </div>
+                <div class="card-container">
+                    <div class="slider-container">
+                        <div class="buttons">
+                            <div class="prev button" onclick="PrevPage(62)">&lt;</div>
+                            <div class="next button" onclick="NextPage(62)">&gt;</div>
+                        </div>
+                        <div id="slider62" class="slider">
+                            <img src="img/avtovo.jpg" alt="Автово">
+                            <img src="img/avtovo1.jpg" alt="Автово">
+                            <img src="img/avtovo2.jpg" alt="Автово">
+                        </div>
+                    </div>
+                    <a href=""><p>Чкаловская</p></a>
+                </div>
+                <div class="card-container">
+                    <div class="slider-container">
+                        <div class="buttons">
+                            <div class="prev button" onclick="PrevPage(63)">&lt;</div>
+                            <div class="next button" onclick="NextPage(63)">&gt;</div>
+                        </div>
+                        <div id="slider63" class="slider">
+                            <img src="img/avtovo.jpg" alt="Автово">
+                            <img src="img/avtovo1.jpg" alt="Автово">
+                            <img src="img/avtovo2.jpg" alt="Автово">
+                        </div>
+                    </div>
+                    <a href=""><p>Спортивная</p></a>
+                </div>
+                <div class="card-container">
+                    <div class="slider-container">
+                        <div class="buttons">
+                            <div class="prev button" onclick="PrevPage(64)">&lt;</div>
+                            <div class="next button" onclick="NextPage(64)">&gt;</div>
+                        </div>
+                        <div id="slider64" class="slider">
+                            <img src="img/avtovo.jpg" alt="Автово">
+                            <img src="img/avtovo1.jpg" alt="Автово">
+                            <img src="img/avtovo2.jpg" alt="Автово">
+                        </div>
+                    </div>
+                    <a href=""><p>Адмиралтейская</p></a>
+                </div>
+                <div class="card-container">
+                    <div class="slider-container">
+                        <div class="buttons">
+                            <div class="prev button" onclick="PrevPage(65)">&lt;</div>
+                            <div class="next button" onclick="NextPage(65)">&gt;</div>
+                        </div>
+                        <div id="slider65" class="slider">
+                            <img src="img/avtovo.jpg" alt="Автово">
+                            <img src="img/avtovo1.jpg" alt="Автово">
+                            <img src="img/avtovo2.jpg" alt="Автово">
+                        </div>
+                    </div>
+                    <a href=""><p>Садовая</p></a>
+                </div>
+                <div class="card-container">
+                    <div class="slider-container">
+                        <div class="buttons">
+                            <div class="prev button" onclick="PrevPage(66)">&lt;</div>
+                            <div class="next button" onclick="NextPage(66)">&gt;</div>
+                        </div>
+                        <div id="slider66" class="slider">
+                            <img src="img/avtovo.jpg" alt="Автово">
+                            <img src="img/avtovo1.jpg" alt="Автово">
+                            <img src="img/avtovo2.jpg" alt="Автово">
+                        </div>
+                    </div>
+                    <a href=""><p>Звенигородская</p></a>
+                </div>
+                <div class="card-container">
+                    <div class="slider-container">
+                        <div class="buttons">
+                            <div class="prev button" onclick="PrevPage(67)">&lt;</div>
+                            <div class="next button" onclick="NextPage(67)">&gt;</div>
+                        </div>
+                        <div id="slider67" class="slider">
+                            <img src="img/avtovo.jpg" alt="Автово">
+                            <img src="img/avtovo1.jpg" alt="Автово">
+                            <img src="img/avtovo2.jpg" alt="Автово">
+                        </div>
+                    </div>
+                    <a href=""><p>Обводный канал</p></a>
+                </div>
+                <div class="card-container">
+                    <div class="slider-container">
+                        <div class="buttons">
+                            <div class="prev button" onclick="PrevPage(68)">&lt;</div>
+                            <div class="next button" onclick="NextPage(68)">&gt;</div>
+                        </div>
+                        <div id="slider68" class="slider">
+                            <img src="img/avtovo.jpg" alt="Автово">
+                            <img src="img/avtovo1.jpg" alt="Автово">
+                            <img src="img/avtovo2.jpg" alt="Автово">
+                        </div>
+                    </div>
+                    <a href=""><p>Волковская</p></a>
+                </div>
+                <div class="card-container">
+                    <div class="slider-container">
+                        <div class="buttons">
+                            <div class="prev button" onclick="PrevPage(69)">&lt;</div>
+                            <div class="next button" onclick="NextPage(69)">&gt;</div>
+                        </div>
+                        <div id="slider69" class="slider">
+                            <img src="img/avtovo.jpg" alt="Автово">
+                            <img src="img/avtovo1.jpg" alt="Автово">
+                            <img src="img/avtovo2.jpg" alt="Автово">
+                        </div>
+                    </div>
+                    <a href=""><p>Бухарестская</p></a>
+                </div>
+                <div class="card-container">
+                    <div class="slider-container">
+                        <div class="buttons">
+                            <div class="prev button" onclick="PrevPage(70)">&lt;</div>
+                            <div class="next button" onclick="NextPage(70)">&gt;</div>
+                        </div>
+                        <div id="slider70" class="slider">
+                            <img src="img/avtovo.jpg" alt="Автово">
+                            <img src="img/avtovo1.jpg" alt="Автово">
+                            <img src="img/avtovo2.jpg" alt="Автово">
+                        </div>
+                    </div>
+                    <a href=""><p>Международная</p></a>
+                </div>
+                <div class="card-container">
+                    <div class="slider-container">
+                        <div class="buttons">
+                            <div class="prev button" onclick="PrevPage(71)">&lt;</div>
+                            <div class="next button" onclick="NextPage(71)">&gt;</div>
+                        </div>
+                        <div id="slider71" class="slider">
+                            <img src="img/avtovo.jpg" alt="Автово">
+                            <img src="img/avtovo1.jpg" alt="Автово">
+                            <img src="img/avtovo2.jpg" alt="Автово">
+                        </div>
+                    </div>
+                    <a href=""><p>Проспект Славы</p></a>
+                </div>
+                <div class="card-container">
+                    <div class="slider-container">
+                        <div class="buttons">
+                            <div class="prev button" onclick="PrevPage(72)">&lt;</div>
+                            <div class="next button" onclick="NextPage(72)">&gt;</div>
+                        </div>
+                        <div id="slider72" class="slider">
+                            <img src="img/avtovo.jpg" alt="Автово">
+                            <img src="img/avtovo1.jpg" alt="Автово">
+                            <img src="img/avtovo2.jpg" alt="Автово">
+                        </div>
+                    </div>
+                    <a href=""><p>Дунайская</p></a>
+                </div>
+                <div class="card-container">
+                    <div class="slider-container">
+                        <div class="buttons">
+                            <div class="prev button" onclick="PrevPage(73)">&lt;</div>
+                            <div class="next button" onclick="NextPage(73)">&gt;</div>
+                        </div>
+                        <div id="slider73" class="slider">
+                            <img src="img/avtovo.jpg" alt="Автово">
+                            <img src="img/avtovo1.jpg" alt="Автово">
+                            <img src="img/avtovo2.jpg" alt="Автово">
+                        </div>
+                    </div>
+                    <a href=""><p>Шушары</p></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
